@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="./index.html"><img src="./imagenes/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">NOSOTROS</a></li>
+                    <li><a href="./cursos.html">COURSE</a></li>
+                    <li><a href="./forum.html">FORUM</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Nuestros Cursos</h1>
+    </section>
+
+    <!-- Comentarios Sobre nuestros cursos -->
+
+    <section class="course">
+        <h1>Cursos que ofrecemos</h1>
+        <p>Estos son todos los cursos que tenemos disponibles futoros pioneros en la tecnologia.</p>
+    
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Curso ideal para aquellos que quieren iniciarse en el mundo de la programacion. <br> Aca vas a poder conocer e interiorizarte con los conceptos fundamentales y daremos las herramientas suficientes para iniciarte en el mercado laboral.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Titulo Universitario para aquellos que tienen sed de conocimiento mayor a lo habitual <br> Vas a poder ser un profesional que puede no solo desempeñar tareas asociadas a la programacion sino desarrollar tu capacidad como lider y aprender otras core-soft skills fundamentales.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduación</h3>
+                <p>Curso ideal para aquellos buscado profundizarse en temas puntuales y esenciales. <br> Sea el mercado que estes interesado, nuestra amplia gama de cursos post graduacion te permitiran profundizar tus conocimientos, sea en FinTech, biotechnology o Artificial Inteligence.</p>
+            </div>
+        </div>
+    
+    </section>
+<!-- INSTALACIONES -->
+
+<section class="instalaciones">
+    <h1>Nuestras Instalaciones</h1>
+    <p>ACA VA A IR INFORMACION SOBRE LAS INSTALACIONES DE ESTA MEGA FACULTAD</p>
+
+    <div class="row">
+        <div class="instalaciones-col">
+            <img src="./imagenes/library.png" alt="">
+            <h3>Biblotecas de primer nivel</h3>
+            <p>Texto sobre la increible bibloteca nuestra</p>
+        </div>
+        <div class="instalaciones-col">
+            <img src="./imagenes/basketball.png" alt="">
+            <h3>Instalaciones deportivas</h3>
+            <p>Texto sobre la increible bibloteca nuestra</p>
+        </div>
+        <div class="instalaciones-col">
+            <img src="./imagenes/cafeteria.png" alt="">
+            <h3>Nutritivo y sabroso</h3>
+            <p>Texto sobre la increible bibloteca nuestra</p>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>Sobre Nosotros</h4>
+    <p>Nos enorgullese ser una de las primeras universidad pioneras con el 100% enfoque en las tecnologias. <br> Siendo establecida en 2008, nuestro crecimiento se ve acompañada por la pasion de nuestros estudiantes y egresados.</p>
+    <div class="iconos">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Creado por Inaki Santurtun</p>
+
+</section>
+
+
+    <!---Javascript para menu pantalla celu perdon jeje----> 
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

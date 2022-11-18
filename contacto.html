@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="./index.html"><img src="./imagenes/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">NOSOTROS</a></li>
+                    <li><a href="./cursos.html">COURSE</a></li>
+                    <li><a href="./forum.html">FORUM</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACTANOS</h1>
+    </section>
+<!-- Contactanos -->
+
+<section class="localizar">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059729384!2d-74.25986816097694!3d40.69714941285065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses-419!2suy!4v1668734802099!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contactanos">
+    <div class="row">
+        <div class="contactanos-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>123 Baker Street, Edicicio Central</h5>
+                    <p>Brooklyn, New York</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Lunes a Viernes, 10am a 6pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>contact@eduford.com</h5>
+                    <p>Envianos tus consultas</p>
+                </span>
+            </div>
+        </div>
+        <div class="contactanos-col">
+            <form action="">
+                <input type="text" placeholder="Ingresa tu nombre" required>
+                <input type="email" placeholder="Ingresa tu email" required>
+                <input type="text" placeholder="Ingresa el asunto" required>
+                <textarea rows="8" placeholder="mensaje" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Enviar Mensaje</button>
+            </form>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>Sobre Nosotros</h4>
+    <p>Nos enorgullese ser una de las primeras universidad pioneras con el 100% enfoque en las tecnologias. <br> Siendo establecida en 2008, nuestro crecimiento se ve acompañada por la pasion de nuestros estudiantes y egresados.</p>
+    <div class="iconos">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Creado por Inaki Santurtun</p>
+
+</section>
+
+
+    <!---Javascript para menu pantalla celu perdon jeje----> 
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
